@@ -1,0 +1,249 @@
+*** General ***
+
+owner    = all
+contact  = some@address.nowhere
+mailhost = my.mail.host
+sendmail = /usr/lib/sendmail
+imgcache = /usr/local/smokeping/cache
+imgurl   = ../cache
+datadir  = /usr/local/smokeping/var
+piddir  = /usr/local/smokeping/var
+cgiurl   = http://youip/htdocs/smokeping.cgi
+smokemail = /usr/local/smokeping/etc/smokemail.dist
+tmail = /usr/local/smokeping/etc/tmail.dist
+
+
+*** Database ***
+
+step     = 300
+pings    = 20
+
+# consfn mrhb steps total
+
+AVERAGE  0.5   1  1008
+AVERAGE  0.5  12  4320
+    MIN  0.5  12  4320
+    MAX  0.5  12  4320
+AVERAGE  0.5 144   720
+    MAX  0.5 144   720
+    MIN  0.5 144   720
+
+*** Presentation ***
+
+template = /usr/local/smokeping/etc/basepage.html.dist
+charset = gb2312
+
++ overview 
+
+width = 600
+height = 50
+range = 10h
+
++ detail
+
+width = 600
+height = 200
+unison_tolerance = 2
+
+"Last Month"      30d
+"Last 3 Hours"    3h
+"Last 30 Hours"   30h
+"Last 10 Days"    10d
+"Last 400 Days"   400d
+
+#+ hierarchies
+#++ owner
+#title = Host Owner
+#++ location
+#title = Location
+
+*** Probes ***
+
++ FPing
+
+binary = /usr/sbin/fping
+
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Smokeping
+remark = Welcome to the SmokePing
+
+
+
++ IDC
+menu = IDC
+title = IDC
+++ Malaysia1
+menu = Malaysia 
+title = Malaysia 103.106.251.37
+host = 103.106.251.37
+
+
+++ russia1
+menu = russia 
+title = russia1 178.22.90.43
+host = 178.22.90.43
+
+
+++ vietnam1
+menu = vietnam
+title = vietnam1 103.48.192.76
+host = 103.48.192.76
+
+
+++ Indonesia1
+menu = Indonesia
+title = Indonesia1 35.198.204.189
+host = 35.198.204.189
+
+
+++ tw1
+menu = TaiWan
+title = TaiWan 112.121.94.94
+host = 112.121.94.94
+
+
+++ korea
+menu = korea
+title = korea1 220.95.235.146
+host = 220.95.235.146
+
+
+++ jp1
+menu = Japan
+title = Japan 158.205.79.254
+host = 158.205.79.254
+
+
+++ us1
+menu = us
+title = us 52.4.148.176
+host = 52.4.148.176
+
+
+++ Singapore1
+menu = Singapore
+title = Singapore1 203.118.6.101
+host = 203.118.6.101
+
++ AWS
+menu = AWS
+title = AWS
+
+++ us-east-11
+menu = us-east-1
+title = us-east-11 52.119.228.200
+host = 52.119.228.200
+
+
+++ us-east-21
+menu = us-east-2
+title = us-east-21 52.94.4.68
+host = 52.94.4.68
+
+
+++ us-west-11
+menu = us-west-1
+title = us-west-11 52.94.12.0
+host = 52.94.12.0
+
+
+++ us-west-21
+menu = us-west-2
+title = us-west-21 52.94.29.176
+host = 52.94.29.176
+
+
+++ ca-central-11
+menu = ca-central-1
+title = ca-central-11 52.94.14.38
+host = 52.94.14.38
+
+
+++ eu-west-11
+menu = eu-west-1
+title = eu-west-11 52.94.5.8
+host = 52.94.5.8
+
+
+++ eu-west-21
+menu = eu-west-2
+title = eu-west-21 52.94.15.84
+host = 52.94.15.84
+
+
+++ eu-central-11
+menu = eu-central-1
+title = eu-central-11 52.94.17.14
+host = 52.94.17.14
+
+
+++ ap-south-11
+menu = ap-south-1
+title = ap-south-11 52.94.20.66
+host = 52.94.20.66
+
+
+++ ap-northeast-21
+menu = ap-northeast-2
+title = ap-northeast-21 52.94.6.16
+host = 52.94.6.16
+
+
+++ ap-southeast-11
+menu = ap-southeast-1
+title = ap-southeast-11 52.94.11.72
+host = 52.94.11.72
+
+
+++ ap-southeast-21
+menu = ap-southeast-2
+title = ap-southeast-21 52.94.13.74
+host = 52.94.13.74
+
+
+++ ap-northeast-11
+menu = ap-northeast-1
+title = ap-northeast-11 52.94.8.88
+host = 52.94.8.88
+
+
+++ sa-east-11
+menu = sa-east-1
+title = sa-east-11 52.94.7.76
+host = 52.94.7.76
+
+
+++ cn-north-11
+menu = cn-north-1
+title = cn-north-11 54.222.57.202
+host = 54.222.57.202
+
+
+++ us-gov-west-11
+menu = us-gov-west-1
+title = us-gov-west-11 52.94.9.78
+host = 52.94.9.78
+
+
++ MYSELF
+menu = MySelf
+title = MySelf
+
+++ unicom-us-east
+menu = unicom-us-east
+title = unicom-us-east 207.254.177.165
+host = 207.254.177.165
+
+++unicom-us-west
+menu = unicom-us-west
+title = unicom-us-west 207.254.190.100
+host = 207.254.190.100
+
+++unicom-Singapore
+menu = unicom-Singapore
+title = unicom-Singapore 103.1.64.28
+host = 103.1.64.28

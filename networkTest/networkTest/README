@@ -1,0 +1,34 @@
+#国内某网站的接口，只返回IP
+curl ip.6655.com/ip.aspx
+curl whatismyip.akamai.com
+#更多用法访问ifconfig.co
+wget -qO - ifconfig.co
+  
+curl icanhazip.com
+dig +short myip.opendns.com @resolver1.opendns.com
+  
+curl ident.me
+curl v4.ident.me
+curl v6.ident.me
+#慢
+curl curlmyip.com 
+curl ifconfig.me
+curl inet-ip.info
+  
+  
+#返回IP和地区
+curl ip.6655.com/ip.aspx?area=1
+curl 1111.ip138.com/ic.asp
+curl ip.cn
+curl cip.cc
+  
+  
+#需要翻x墙，只返回IP
+curl ip.appspot.com
+  
+#参考 http://unix.stackexchange.com/questions/22615/how-can-i-get-my-external-ip-address-in-bash
+#有人给了以下测试方法
+  
+wget https://raw.githubusercontent.com/rsp/scripts/master/externalip-benchmark
+chmod a+x externalip-benchmark
+./externalip-benchmark

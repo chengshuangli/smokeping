@@ -1,0 +1,40 @@
+#!/bin/bash
+
+
+
+sshfile()
+    {
+        local file=$1
+        local port=$2
+        local user=$3
+        local host=$4
+
+        scp -i /home/asher/.ssh/id_rsa -P $port $file  $user@$host:/tmp/
+        ssh -i /home/asher/.ssh/id_rsa -p $port  $user@$host "sudo cat /tmp/$file >> ~/.ssh/authorized_keys"
+    }
+    
+
+    #Copyfile 22 Targets ubuntu host /etc/smokeping/config.d
+    #restartsmk 22 ubuntu host
+
+    for i in `cat smk.csv | egrep -v '^#|^$'`
+        do
+            echo $i
+            {
+            if echo $i | egrep -q -i 'al|google|unic'
+                then
+                    echo $i is alin
+                    user=root
+                elif echo $i | grep -q -i  tencent
+                    then
+                    echo $i is qq
+                    user=ubuntu
+                else
+                    user=ubuntu
+            fi
+             host=$(echo $i | awk -F, '{print $1}')
+             sshfile idc198 22 $user  $host
+#             restartsmk 22 $user $host
+             }&
+        done
+

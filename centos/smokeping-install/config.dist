@@ -1,0 +1,2023 @@
+*** General ***
+
+owner    = PWRD
+contact  = some@address.nowhere
+mailhost = my.mail.host
+# sendmail = /usr/lib/sendmail
+imgcache = /usr/local/smokeping/cache
+imgurl   = ../cache
+datadir  = /usr/local/smokeping/var
+piddir  = /usr/local/smokeping/var
+cgiurl   = http://123.157.254.20/htdocs/smokeping.cgi
+smokemail = /usr/local/smokeping/etc/smokemail.dist
+tmail = /usr/local/smokeping/etc/tmail.dist
+
+
+*** Database ***
+
+step     = 300
+pings    = 20
+
+# consfn mrhb steps total
+
+AVERAGE  0.5   1  1008
+AVERAGE  0.5  12  4320
+    MIN  0.5  12  4320
+    MAX  0.5  12  4320
+AVERAGE  0.5 144   720
+    MAX  0.5 144   720
+    MIN  0.5 144   720
+
+*** Presentation ***
+
+template = /usr/local/smokeping/etc/basepage.html.dist
+charset = gb2312
+
++ overview 
+
+width = 600
+height = 50
+range = 10h
+
++ detail
+
+width = 600
+height = 200
+unison_tolerance = 2
+
+"Last Month"      30d
+"Last 3 Hours"    3h
+"Last 30 Hours"   30h
+"Last 10 Days"    10d
+"Last 400 Days"   400d
+
+#+ hierarchies
+#++ owner
+#title = Host Owner
+#++ location
+#title = Location
+
+*** Probes ***
+
++ FPing
+
+binary = /usr/sbin/fping
+
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Smokeping
+remark = Welcome to the SmokePing website of Perfect World
+
++ Trace
+
+menu = traceroute
+title = traceroute
+menuextra = <a target='_blank' href='tr.html{HOST}' class='{CLASS}' \
+onclick="window.open(this.href,this.target, \
+'width=800,height=500,toolbar=no,location=no,status=no,scrollbars=no'); \
+return false;">(TR)</a>
+
+++ beijing
+menu = 北京
+title = beijing
+host = 220.194.46.101
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 125.39.151.30
+
+++ hebei
+menu = 河北
+title = hebei
+host = 211.90.16.163
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 221.204.238.54
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host = 116.113.124.59
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 218.60.25.66
+
+++ jilin
+menu = 吉林
+title = jilin
+host = 122.141.231.132
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 125.211.218.81
+
+++ shandong
+menu = 山东
+title = shandong
+host = 124.133.28.7
+
+++ henan
+menu = 河南
+title = henan
+host = 125.46.54.236
+
+++ shanghai
+menu = 上海
+title = shanghai
+host =  140.206.173.162
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 58.240.109.171
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host =  101.69.195.94
+
+++ anhui
+menu = 安徽
+title = anhui
+host = 103.28.204.32
+
+++ hubei
+menu = 湖北
+title = hubei
+host = 58.19.32.1
+
+++ hunan
+menu = 湖南
+title = hunan
+host = 42.48.107.19
+
+++ jiangxi
+menu = 江西
+title = jiangxi
+host =  118.212.147.71
+
+++ guangdong
+menu = 广东
+title = guangdong
+host = 157.255.21.2
+
+++ guangxi
+menu = 广西
+title = guangxi
+host = 121.31.40.242
+
+++ hainan
+menu = 海南
+title = hainan
+host = 113.59.34.21
+
+++ fujian
+menu = 福建
+title = fujian
+host = 36.250.7.237
+
+++ sichuan
+menu = 四川
+title = sichuan
+host =  124.161.115.156
+
+++ chongqing
+menu = 重庆
+title = chongqing
+host = 113.207.31.98
+
+++ guizhou
+menu = 贵州
+title = guizhou
+host = 111.85.191.135
+
+++ yunnan
+menu = 云南
+title = yunnan
+host =  221.3.131.54
+
+++ xizang
+menu = 西藏
+title = xizang
+host = 221.13.95.214
+
+++ shanxi_
+menu = 陕西
+title = shanxi
+host = 123.138.184.22
+
+++ gansu
+menu = 甘肃
+title = gansu
+host = 221.7.38.215
+
+++ xinjiang
+menu = 新疆
+title = xinjiang
+host = 60.13.236.46
+
+++ qinghai
+menu = 青海
+title = qinghai
+host = 221.207.30.50
+
+++ ningxia
+menu = 宁夏
+title = ningxia
+host = 220.200.150.25
+
+++ shanghai_dx
+menu = 上海
+title = shanghai
+host = 114.80.201.18
+
+++ jiangsu_dx
+menu = 江苏
+title = jiangsu
+host = 61.155.8.149
+
+++ zhejiang_dx
+menu = 浙江
+title = zhejiang
+host = 61.164.109.58
+
+++ anhui_dx
+menu = 安徽
+title = anhui
+host = 36.7.89.133
+
+++ hubei_dx
+menu = 湖北
+title = hubei
+host = 58.48.111.22
+
+++ hunan_dx
+menu = 湖南
+title = hunan
+host = 124.232.150.171
+
+++ jiangxi_dx
+menu = 江西
+title = jiangxi
+host = 59.63.192.164
+
+++ guangdong_dx
+menu = 广东
+title = guangdong
+host = 183.61.183.81
+
+++ guangxi_dx
+menu = 广西
+title = guangxi
+host = 218.65.131.40
+
+++ hainan_dx
+menu = 海南
+title = hainan
+host = 112.67.250.23
+
+++ fujian_dx
+menu = 福建
+title = fujian
+host = 218.6.8.189
+
+++ sichuan_dx
+menu = 四川
+title = sichuan
+host = 211.149.210.36
+
+++ chongqing_dx
+menu = 重庆
+title = chongqing
+host = 219.153.71.238
+
+++ guizhou_dx
+menu = 贵州
+title = guizhou
+host = 222.87.128.7
+
+++ yunnan_dx
+menu = 云南
+title = yunnan
+host = 116.55.248.176
+
+++ xizang_dx
+menu = 西藏
+title = xizang
+host = 124.31.219.205
+
+++ shanxi_dx_
+menu = 陕西
+title = shanxi_dx
+host = 61.150.91.223
+
+++ gansu_dx
+menu = 甘肃
+title = gansu
+#host = 61.178.0.93
+host = 202.100.78.91
+
+++ xinjiang_dx
+menu = 新疆
+title = xinjiang
+host = 124.119.87.204
+
+++ qinghai_dx
+menu = 青海
+title = qinghai
+host = 223.220.250.152
+
+++ ningxia_dx
+menu = 宁夏
+title = ningxia
+host = 218.95.142.219
+
+++ beijing_dx
+menu = 北京
+title = beijing
+host = 119.90.3.2
+
+++ tianjin_dx
+menu = 天津
+title = tianjin
+host = 221.238.254.118
+
+++ hebei_dx
+menu = 河北
+title = hebei
+host = 222.222.12.14
+
+++ shanxi_dx
+menu = 山西
+title = shanxi
+host = 59.49.46.137
+
+++ neimenggu_dx
+menu = 内蒙古
+title = neimenggu
+host = 1.180.83.194
+
+++ liaoning_dx
+menu = 辽宁
+title = liaoning
+host = 59.44.37.91
+
+++ jilin_dx
+menu = 吉林
+title = jinlin
+host = 36.49.31.238
+
+++ heilongjiang_dx
+menu = 黑龙江
+title = heilongjiang
+host = 112.100.4.150
+
+++ shandong_dx
+menu = 山东
+title = shandong
+host =  222.175.101.239
+
+++ henan_dx
+menu = 河南
+title = henan
+host = 1.195.48.1
+
+++ shanghai_yd
+menu = 上海
+title = shanghai
+host = 117.135.163.173
+
+++ jiangsu_yd
+menu = 江苏
+title = jiangsu
+host = 112.25.230.238
+
+++ zhejiang_yd
+menu = 浙江
+title = zhejiang
+host = 211.140.143.3
+
+++ anhui_yd
+menu = 安徽
+title = anhui
+host = 120.209.133.152
+
+++ hubei_yd
+menu = 湖北
+title = hubei
+host = 111.47.204.86
+
+++ hunan_yd
+menu = 湖南
+title = hunan
+host = 111.22.14.41
+
+++ jiangxi_yd
+menu = 江西
+title = jiangxi
+host = 117.169.20.214
+
+++ guangdong_yd
+menu = 广东
+title = guangdong
+host = 183.232.59.42
+
+++ guangxi_yd
+menu = 广西
+title = guangxi
+host = 111.12.14.36
+
+++ hainan_yd
+menu = 海南
+title = hainan
+host = 221.182.171.26
+
+++ fujian_yd
+menu = 福建
+title = fujian
+host = 218.66.59.254
+
+++ sichuan_yd
+menu = 四川
+title = sichuan
+host =  117.139.208.29
+
+++ chongqing_yd
+menu = 重庆
+title = chongqing
+host = 218.201.38.22
+
+++ guizhou_yd
+menu = 贵州
+title = guizhou
+host = 117.187.23.33
+
+++ yunnan_yd
+menu = 云南
+title = yunnan
+host = 183.224.2.7
+
+++ xizang_yd
+menu = 西藏
+title = xizang
+host = 223.104.26.1
+
+++ shanx_yd
+menu = 陕西
+title = shanx_dx
+host = 61.150.91.223
+
+++ gansu_yd
+menu = 甘肃
+title = gansu
+host = 117.156.241.136
+
+++ xinjiang_yd
+menu = 新疆
+title = xinjiang
+host = 117.145.182.172
+
+++ qinghai_yd
+menu = 青海
+title = qinghai
+host = 111.44.243.182
+
+++ ningxia_yd
+menu = 宁夏
+title = ningxia
+host = 218.203.108.55
+
+++ beijing_yd
+menu = 北京
+title = beijing
+host = 122.70.130.21
+
+++ tianjin_yd
+menu = 天津
+title = tianjin
+host = 117.131.207.163
+
+++ hebei_yd
+menu = 河北
+title = hebei
+host = 111.11.30.69
+
+++ shanxi_yd-
+menu = 山西
+title = shanxi
+host = 221.180.21.26
+
+++ neimenggu_yd
+menu = 内蒙古
+title = neimenggu
+host =  218.202.135.70
+
+++ liaoning_yd
+menu = 辽宁
+title = liaoning
+host = 223.100.7.69
+
+++ jilin_yd
+menu = 吉林
+title = jilin
+host = 211.141.16.99
+
+++ heilongjiang_yd
+menu = 黑龙江
+title = heilongjiang
+host = 111.40.8.41
+
+++ shandong_yd
+menu = 山东
+title = shandong
+host = 223.99.238.104
+
+++ henan_yd
+menu = 河南
+title = henan
+host = 117.158.150.39
+
++ Trace1
+
+menu = traceroute_old
+title = traceroute_old
+menuextra = <a target='_blank' href='tr.html{HOST}' class='{CLASS}' \
+onclick="window.open(this.href,this.target, \
+'width=800,height=500,toolbar=no,location=no,status=no,scrollbars=no'); \
+return false;">(TR)</a>
+
+++ beijing
+menu = 北京
+title = 北京
+host = 220.194.46.101
+
+++ tianjin
+menu = 天津
+title = 天津
+host = 218.69.32.1
+
+++ hebei
+menu = 河北
+title = 河北
+host = 202.99.160.68
+
+++ shanxi
+menu = 山西
+title = 山西
+host = 218.26.125.125
+
+++ neimenggu
+menu = 内蒙古
+title = 内蒙古
+host = 202.99.224.68
+
+++ liaoning
+menu = 辽宁
+title = 辽宁
+host = 218.60.44.1
+
+++ jilin
+menu = 吉林
+title = 吉林
+host = 125.32.127.14
+
+++ heilongjiang
+menu = 黑龙江
+title = 黑龙江
+host = 61.158.8.75 
+
+++ shandong
+menu = 山东
+title = 山东
+host = 202.102.164.189
+
+++ henan
+menu = 河南
+title = 河南
+host = 61.168.254.254
+
+++ shanghai
+menu = 上海
+title = shanghai
+host =  112.64.243.1
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 221.6.2.14
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host =  221.12.2.150
+
+++ anhui
+menu = 安徽
+title = anhui
+host = 58.242.2.2
+
+++ hubei
+menu = 湖北
+title = hubei
+host = 58.19.32.1
+
+++ hunan
+menu = 湖南
+title = hunan
+host = 220.248.171.194
+
+++ jiangxi
+menu = 江西
+title = jiangxi
+host =  118.212.147.71
+
+++ guangdong
+menu = 广东
+title = guangdong
+host = 218.107.46.1
+
+++ guangxi
+menu = 广西
+title = guangxi
+host = 121.31.33.1
+
+++ hainan
+menu = 海南
+title = hainan
+host = 221.11.154.1
+
+++ fujian
+menu = 福建
+title = fujian
+host = 218.104.224.86
+
+++ sichuan
+menu = 四川
+title = sichuan
+host =  124.161.97.1
+
+++ chongqing
+menu = 重庆
+title = chongqing
+host = 221.5.232.1
+
+++ guizhou
+menu = 贵州
+title = guizhou
+host = 111.85.191.135
+
+++ yunnan
+menu = 云南
+title = yunnan
+host =  14.204.72.1
+
+++ xizang
+menu = 西藏
+title = xizang
+host = 221.13.95.214
+
+++ shanxi_
+menu = 陕西
+title = shanxi_dx
+host = 123.138.176.1
+
+++ gansu
+menu = 甘肃
+title = gansu
+host = 221.7.32.30
+
+++ xinjiang
+menu = 新疆
+title = xinjiang
+host = 60.13.236.46
+
+++ qinghai
+menu = 青海
+title = qinghai
+host = 221.207.30.50
+
+++ ningxia
+menu = 宁夏
+title = ningxia
+host = 221.199.2.114
+
+++ shanghai_dx
+menu = 上海
+title = 上海
+host = 202.96.209.5
+
+++ jiangsu_dx
+menu = 江苏
+title = 江苏
+host = 61.147.38.1
+
+++ zhejiang_dx
+menu = 浙江
+title = 浙江
+host = 36.24.124.1
+
+++ anhui_dx
+menu = 安徽
+title = 安徽
+host = 36.7.89.133
+
+++ hubei_dx
+menu = 湖北
+title = 湖北
+host = 221.232.254.62
+
+++ hunan_dx
+menu = 湖南
+title = 湖南
+host = 124.232.150.171
+
+++ jiangxi_dx
+menu = 江西
+title = 江西
+host = 202.101.224.68
+
+++ guangdong_dx
+menu = 广东
+title = 广东
+host = 14.215.108.1
+
+++ guangxi_dx
+menu = 广西
+title = 广西
+host = 218.65.136.9
+
+++ hainan_dx
+menu = 海南
+title = 海南
+host = 202.100.197.50
+ 
+++ fujian_dx
+menu = 福建
+title = 福建
+host = 218.66.59.254
+
+++ sichuan_dx
+menu = 四川
+title = 四川
+host = 118.123.227.1
+
+++ chongqing_dx
+menu = 重庆
+title = 重庆
+host = 61.128.192.254
+
+++ guizhou_dx
+menu = 贵州
+title = 贵州
+host = 219.151.0.254
+
+++ yunnan_dx
+menu = 云南
+title = 云南
+host = 42.242.192.1
+
+++ xizang_dx
+menu = 西藏
+title = 西藏
+host = 124.31.219.205
+
+++ shanxi_dx_
+menu = 陕西
+title = 陕西
+host = 124.115.18.1
+
+++ gansu_dx
+menu = 甘肃
+title = 甘肃
+host = 61.178.0.7
+
+++ xinjiang_dx
+menu = 新疆
+title = 新疆
+host = 222.83.4.250
+
+++ qinghai_dx
+menu = 青海
+title = 青海
+host = 202.100.128.68
+
+++ ningxia_dx
+menu = 宁夏
+title = 宁夏
+host = 202.100.96.68
+
+++ beijing_dx
+menu = 北京
+title = beijing
+host = 119.90.3.2
+
+++ tianjin_dx
+menu = 天津
+title = tianjin
+host = 219.150.51.181
+
+++ hebei_dx
+menu = 河北
+title = hebei
+host = 27.129.1.26
+
+++ shanxi_dx
+menu = 山西
+title = shanxi
+host = 59.49.46.137
+
+++ neimenggu_dx
+menu = 内蒙古
+title = neimenggu
+host = 1.180.83.194
+
+++ liaoning_dx
+menu = 辽宁
+title = liaoning
+host = 59.44.37.91
+
+++ jilin_dx
+menu = 吉林
+title = jinlin
+host = 222.168.2.62
+
+++ heilongjiang_dx
+menu = 黑龙江
+title = heilongjiang
+host = 112.100.4.150
+
+++ shandong_dx
+menu = 山东
+title = shandong
+host =  58.56.46.1
+
+++ henan_dx
+menu = 河南
+title = henan
+host = 1.195.48.1
+
+++ shanghai_yd
+menu = 上海
+title = shanghai
+host = 117.131.1.1
+
+++ zhejiang_yd
+menu = 浙江
+title = zhejiang
+host = 39.189.192.1
+
+++ jiangsu_yd
+menu = 江苏
+title = jiangsu
+host = 211.138.173.1
+
+++ anhui_yd
+menu = 安徽
+title = anhui
+host = 112.26.0.1
+
+++ hubei_yd
+menu = 湖北
+title = hubei
+host = 111.47.92.1
+
+++ hunan_yd
+menu = 湖南
+title = hunan
+host = 111.8.0.1
+
+++ jiangxi_yd
+menu = 江西
+title = jiangxi
+host = 117.163.96.1
+
+++ guangdong_yd
+menu = 广东
+title = guangdong
+host = 120.196.10.1
+
+++ guangxi_yd
+menu = 广西
+title = guangxi
+host = 111.12.80.1
+
+++ hainan_yd
+menu = 海南
+title = hainan
+host = 111.28.0.1
+
+++ fujian_yd
+menu = 福建
+title = fujian
+host = 218.66.59.254
+
+++ sichuan_yd
+menu = 四川
+title = sichuan
+host = 218.203.243.1
+
+++ chongqing_yd
+menu = 重庆
+title = chongqing
+host = 218.207.20.1
+
+++ guizhou_yd
+menu = 贵州
+title = guizhou
+host = 211.139.1.3
+
+++ yunnan_yd
+menu = 云南
+title = yunnan
+host = 183.224.40.1
+
+++ xizang_yd
+menu = 西藏
+title = xizang
+host = 223.104.26.1
+
+++ shanx_yd
+menu = 陕西
+title = shanx_dx
+host = 218.200.48.1
+
+++ gansu_yd
+menu = 甘肃
+title = gansu
+host = 218.203.160.1
+
+++ xinjiang_yd
+menu = 新疆
+title = xinjiang
+host = 218.202.152.130
+
+++ qinghai_yd
+menu = 青海
+title = qinghai
+host = 211.138.75.123
+
+++ ningxia_yd
+menu = 宁夏
+title = ningxia
+host = 218.203.106.1
+
+++ beijing_yd
+menu = 北京
+title = beijing
+host = 36.192.0.1
+
+++ tianjin_yd
+menu = 天津
+title = tianjin
+host = 211.137.160.5
+
+++ hebei_yd
+menu = 河北
+title = hebei
+host = 211.143.62.1
+
+++ shanxi_yd
+menu = 山西
+title = shanxi
+host = 221.131.55.1
+
+++ neimenggu_yd
+menu = 内蒙古
+title = neimenggu
+host =  218.202.71.1
+
+++ liaoning_yd
+menu = 辽宁
+title = liaoning
+host = 211.137.32.178
+
+++ jilin_yd
+menu = 吉林
+title = jilin
+host = 211.141.16.99
+
+++ heilongjiang_yd
+menu = 黑龙江
+title = heilongjiang
+host = 111.40.0.1
+
+++ shandong_yd
+menu = 山东
+title = shandong
+host = 218.201.96.130
+
+++ henan_yd
+menu = 河南
+title = henan
+host = 221.176.96.1
+
++ GPN
+ 
+menu = GPN
+title = GPN
+
+++ Beijing
+menu = Beijing
+title = Beijing
+host = 192.168.5.1
+
+++ HongKong
+menu = HongKong
+title = HongKong
+host = 192.168.5.2
+
+++ TaiWan
+menu = TaiWan
+title = TaiWan
+host = 192.168.5.3
+
+
++ CNC1
+ 
+menu = 网通_监控宝
+title = 网通_监控宝
+
+++ beijing
+menu = 北京
+title = beijing
+host = 220.194.46.101
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 125.39.151.30
+
+++ hebei
+menu = 河北
+title = hebei
+host = 211.90.16.163
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 221.204.238.54
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host = 116.113.124.59
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 218.60.25.66
+
+++ jilin
+menu = 吉林
+title = jilin
+host = 122.141.231.132
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 125.211.218.81
+
+++ shandong
+menu = 山东
+title = shandong
+host = 124.133.28.7
+
+++ henan
+menu = 河南
+title = henan
+host = 125.46.54.236
+
+++ shanghai
+menu = 上海
+title = shanghai
+host =  140.206.173.162
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 58.240.109.171
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host =  101.69.195.94
+
+++ anhui
+menu = 安徽
+title = anhui
+host = 103.28.204.32
+
+++ hubei
+menu = 湖北
+title = hubei
+host = 58.19.32.1
+
+++ hunan
+menu = 湖南
+title = hunan
+host = 42.48.107.19
+
+++ jiangxi
+menu = 江西
+title = jiangxi
+host =  118.212.147.71
+
+++ guangdong
+menu = 广东
+title = guangdong
+host = 157.255.21.2
+
+++ guangxi
+menu = 广西
+title = guangxi
+host = 121.31.40.242
+
+++ hainan
+menu = 海南
+title = hainan
+host = 113.59.34.21
+
+++ fujian
+menu = 福建
+title = fujian
+host = 36.250.7.237
+
+++ sichuan
+menu = 四川
+title = sichuan
+host =  124.161.115.156
+
+++ chongqing
+menu = 重庆
+title = chongqing
+host = 113.207.31.98
+
+++ guizhou
+menu = 贵州
+title = guizhou
+host = 111.85.191.135
+
+++ yunnan
+menu = 云南
+title = yunnan
+host =  221.3.131.54
+
+++ xizang
+menu = 西藏
+title = xizang
+host = 221.13.95.214
+
+++ shanxi_
+menu = 陕西
+title = shanxi
+host = 123.138.184.22
+
+++ gansu
+menu = 甘肃
+title = gansu
+host = 221.7.38.215
+
+++ xinjiang
+menu = 新疆
+title = xinjiang
+host = 60.13.236.46
+
+++ qinghai
+menu = 青海
+title = qinghai
+host = 221.207.30.50
+
+++ ningxia
+menu = 宁夏
+title = ningxia
+host = 220.200.150.25
+
++ CNC2
+ 
+menu = 网通
+title = 网通
+
+++ beijing
+menu = 北京
+title = beijing
+host = 220.194.46.101
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 218.69.32.1
+
+++ hebei
+menu = 河北
+title = hebei
+host = 202.99.160.68
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 218.26.7.1
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host = 202.99.224.68
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 218.60.44.1
+
+++ jilin
+menu = 吉林
+title = jilin
+host = 125.32.127.1
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 61.158.8.75
+
+++ shandong
+menu = 山东
+title = shandong
+host = 202.102.164.190
+
+++ henan
+menu = 河南
+title = henan
+host = 61.168.254.254
+
+++ shanghai
+menu = 上海
+title = shanghai
+host =  112.64.243.1
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 221.6.2.14
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host =  221.12.2.150
+
+++ anhui
+menu = 安徽
+title = anhui
+host = 58.242.2.2
+
+++ hubei
+menu = 湖北
+title = hubei
+host = 58.19.32.1
+
+++ hunan
+menu = 湖南
+title = hunan
+host = 220.248.171.194
+
+++ jiangxi
+menu = 江西
+title = jiangxi
+host =  118.212.147.71
+
+++ guangdong
+menu = 广东
+title = guangdong
+host = 218.107.46.1
+
+++ guangxi
+menu = 广西
+title = guangxi
+host = 121.31.33.1
+
+++ hainan
+menu = 海南
+title = hainan
+host = 221.11.154.1
+
+++ fujian
+menu = 福建
+title = fujian
+host = 218.104.224.86
+
+++ sichuan
+menu = 四川
+title = sichuan
+host =  124.161.97.1
+
+++ chongqing
+menu = 重庆
+title = chongqing
+host = 221.5.232.1
+
+++ guizhou
+menu = 贵州
+title = guizhou
+host = 111.85.191.135
+
+++ yunnan
+menu = 云南
+title = yunnan
+host =  14.204.72.1
+
+++ xizang
+menu = 西藏
+title = xizang
+host = 221.13.95.214
+
+++ shanxi_
+menu = 陕西
+title = shanxi_dx
+host = 123.138.176.1
+
+++ gansu
+menu = 甘肃
+title = gansu
+host = 221.7.32.30
+
+++ xinjiang
+menu = 新疆
+title = xinjiang
+host = 60.13.236.46
+
+++ qinghai
+menu = 青海
+title = qinghai
+host = 221.207.30.50
+
+++ ningxia
+menu = 宁夏
+title = ningxia
+host = 221.199.2.114
+
+#+ MultiHostCNC
+#menu = 联通汇总
+#title = All Host In One Graph of Unincom
+#host = /CNC/beijing /CNC/tianjin /CNC/hebei /CNC/shanxi /CNC/neimenggu /CNC/liaoning /CNC/jilin /CNC/heilongjiang /CNC/shandong /CNC/henan
+
++ TELCOM1
+ 
+menu = 电信_监控宝
+title = 电信_监控宝
+
+ 
+++ shanghai_dx
+menu = 上海
+title = shanghai
+host = 114.80.201.18
+
+++ jiangsu_dx
+menu = 江苏
+title = jiangsu
+host = 61.155.8.149
+
+++ zhejiang_dx
+menu = 浙江
+title = zhejiang
+host = 61.164.109.58
+
+++ anhui_dx
+menu = 安徽
+title = anhui
+host = 36.7.89.133
+
+++ hubei_dx
+menu = 湖北
+title = hubei
+host = 58.48.111.22
+
+++ hunan_dx
+menu = 湖南
+title = hunan
+host = 124.232.150.171
+
+++ jiangxi_dx
+menu = 江西
+title = jiangxi
+host = 59.63.192.164
+
+++ guangdong_dx
+menu = 广东
+title = guangdong
+host = 183.61.183.81
+
+++ guangxi_dx
+menu = 广西
+title = guangxi
+host = 218.65.131.40
+
+++ hainan_dx
+menu = 海南
+title = hainan
+host = 112.67.250.23
+
+++ fujian_dx
+menu = 福建
+title = fujian
+host = 218.6.8.189
+
+++ sichuan_dx
+menu = 四川
+title = sichuan
+host = 211.149.210.36
+
+++ chongqing_dx
+menu = 重庆
+title = chongqing
+host = 219.153.71.238
+
+++ guizhou_dx
+menu = 贵州
+title = guizhou
+host = 222.87.128.7
+
+++ yunnan_dx
+menu = 云南
+title = yunnan
+host = 116.55.248.176
+
+++ xizang_dx
+menu = 西藏
+title = xizang
+host = 124.31.219.205
+
+++ shanxi_dx_
+menu = 陕西
+title = shanxi_dx
+host = 61.150.91.223
+
+++ gansu_dx
+menu = 甘肃
+title = gansu
+#host = 61.178.0.93
+host = 202.100.78.91
+
+++ xinjiang_dx
+menu = 新疆
+title = xinjiang
+host = 124.119.87.204
+
+++ qinghai_dx
+menu = 青海
+title = qinghai
+host = 223.220.250.152
+
+++ ningxia_dx
+menu = 宁夏
+title = ningxia
+host = 218.95.142.219
+
+++ beijing
+menu = 北京
+title = beijing
+host = 119.90.3.2
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 221.238.254.118
+
+++ hebei
+menu = 河北
+title = hebei
+host = 222.222.12.14
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 59.49.46.137
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host = 1.180.83.194
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 59.44.37.91
+
+++ jilin
+menu = 吉林
+title = jinlin
+host = 36.49.31.238
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 112.100.4.150
+
+++ shandong
+menu = 山东
+title = shandong
+host =  222.175.101.239
+
+++ henan
+menu = 河南
+title = henan
+host = 1.195.48.1
+
++ TELCOM2
+ 
+menu = 电信
+title = 电信 
+
+ 
+++ shanghai_dx
+menu = 上海
+title = shanghai
+host = 202.96.209.5
+
+++ jiangsu_dx
+menu = 江苏
+title = jiangsu
+host = 61.147.38.1
+
+++ zhejiang_dx
+menu = 浙江
+title = zhejiang
+host = 36.24.124.1
+
+++ anhui_dx
+menu = 安徽
+title = anhui
+host = 36.7.89.133
+
+++ hubei_dx
+menu = 湖北
+title = hubei
+host = 221.232.254.62
+
+++ hunan_dx
+menu = 湖南
+title = hunan
+host = 124.232.150.171
+
+++ jiangxi_dx
+menu = 江西
+title = jiangxi
+host = 202.101.224.68
+
+++ guangdong_dx
+menu = 广东
+title = guangdong
+host = 14.215.108.1
+
+++ guangxi_dx
+menu = 广西
+title = guangxi
+host = 218.65.136.9
+
+++ hainan_dx
+menu = 海南
+title = hainan
+host = 202.100.197.50
+
+++ fujian_dx
+menu = 福建
+title = fujian
+host = 218.66.59.254
+
+++ sichuan_dx
+menu = 四川
+title = sichuan
+host = 118.123.227.1
+
+++ chongqing_dx
+menu = 重庆
+title = chongqing
+host = 61.128.192.254
+
+++ guizhou_dx
+menu = 贵州
+title = guizhou
+host = 219.151.0.254
+
+++ yunnan_dx
+menu = 云南
+title = yunnan
+host = 42.242.192.1
+
+++ xizang_dx
+menu = 西藏
+title = xizang
+host = 124.31.219.205
+
+++ shanxi_dx_
+menu = 陕西
+title = shanxi_dx
+host = 124.115.18.1
+
+++ gansu_dx
+menu = 甘肃
+title = gansu
+#host = 61.178.0.93
+host = 202.100.64.68
+
+++ xinjiang_dx
+menu = 新疆
+title = xinjiang
+host = 61.128.114.133
+
+++ qinghai_dx
+menu = 青海
+title = qinghai
+host = 202.100.128.68
+
+++ ningxia_dx
+menu = 宁夏
+title = ningxia
+host = 222.75.152.129
+
+++ beijing
+menu = 北京
+title = beijing
+host = 119.90.3.2
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 219.150.51.181
+
+++ hebei
+menu = 河北
+title = hebei
+host = 27.129.1.26
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 59.49.46.137
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host = 1.180.83.194
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 59.44.37.91
+
+++ jilin
+menu = 吉林
+title = jinlin
+host = 222.168.1.145
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 112.100.4.150
+
+++ shandong
+menu = 山东
+title = shandong
+host =  58.56.46.1
+
+++ henan
+menu = 河南
+title = henan
+host = 1.195.48.1
+
+
+#+ MultiHostTEL
+#menu = 电信汇总
+#title = All Host In One Graph of Telcom
+#host = /TELCOM/shanghai_dx /TELCOM/jiangsu_dx /TELCOM/zhejiang_dx /TELCOM/anhui_dx /TELCOM/hubei_dx /TELCOM/hunan_dx /TELCOM/jiangxi_dx /TELCOM/guangdong_dx /TELCOM/guangxi_dx /TELCOM/hainan_dx /TELCOM/fujian_dx /TELCOM/sichuan_dx /TELCOM/chongqing_dx /TELCOM/guizhou_dx /TELCOM/yunnan_dx /TELCOM/xizang_dx /TELCOM/shanxi_dx_ /TELCOM/gansu_dx /TELCOM/xinjiang_dx /TELCOM/qinghai_dx /TELCOM/ningxia_dx
+
++ CMCC1
+ 
+menu = 移动_监控宝
+title = 移动_监控宝
+
+++ shanghai
+menu = 上海
+title = shanghai
+host = 117.135.163.173
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 112.25.230.238
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host = 211.140.143.3
+
+++ anhui
+menu = 安徽
+title = anhui
+host = 120.209.133.152
+
+++ hubei
+menu = 湖北
+title = hubei
+host = 111.47.204.86
+
+++ hunan
+menu = 湖南
+title = hunan
+host = 111.22.14.41
+
+++ jiangxi
+menu = 江西
+title = jiangxi
+host = 117.169.20.214
+
+++ guangdong
+menu = 广东
+title = guangdong
+host = 183.232.59.42
+
+++ guangxi
+menu = 广西
+title = guangxi
+host = 111.12.14.36
+
+++ hainan
+menu = 海南
+title = hainan
+host = 221.182.171.26
+
+++ fujian
+menu = 福建
+title = fujian
+host = 218.66.59.254
+
+++ sichuan
+menu = 四川
+title = sichuan
+host =  117.139.208.29
+
+++ chongqing
+menu = 重庆
+title = chongqing
+host = 218.201.38.22
+
+++ guizhou
+menu = 贵州
+title = guizhou
+host = 117.187.23.33
+
+++ yunnan
+menu = 云南
+title = yunnan
+host = 183.224.2.7
+
+++ xizang
+menu = 西藏
+title = xizang
+host = 223.104.26.1
+
+++ shanxi_
+menu = 陕西
+title = shanxi_dx
+host = 61.150.91.223
+
+++ gansu
+menu = 甘肃
+title = gansu
+host = 117.156.241.136
+
+++ xinjiang
+menu = 新疆
+title = xinjiang
+host = 117.145.182.172
+
+++ qinghai
+menu = 青海
+title = qinghai
+host = 111.44.243.182
+
+++ ningxia
+menu = 宁夏
+title = ningxia
+host = 218.203.108.55
+
+++ beijing
+menu = 北京
+title = beijing
+host = 122.70.130.21
+
+++ tianjin
+menu = 天津
+title = tianjin
+host = 117.131.207.163
+
+++ hebei
+menu = 河北
+title = hebei
+host = 111.11.30.69
+
+++ shanxi
+menu = 山西
+title = shanxi
+host = 221.180.21.26
+
+++ neimenggu
+menu = 内蒙古
+title = neimenggu
+host =  218.202.135.70
+
+++ liaoning
+menu = 辽宁
+title = liaoning
+host = 223.100.7.69
+
+++ jilin
+menu = 吉林
+title = jilin
+host = 211.141.16.99
+
+++ heilongjiang
+menu = 黑龙江
+title = heilongjiang
+host = 111.40.8.41
+
+++ shandong
+menu = 山东
+title = shandong
+host = 223.99.238.104
+
+++ henan
+menu = 河南
+title = henan
+host = 117.158.150.39
+
++ CMCC2
+ 
+menu = 移动
+title = 移动
+
+++ shanghai
+menu = 上海
+title = shanghai
+host = 117.131.1.1
+
+++ zhejiang
+menu = 浙江
+title = zhejiang
+host = 39.189.192.1
+
+++ jiangsu
+menu = 江苏
+title = jiangsu
+host = 211.138.173.1
+
+++ anhui_yd
+menu = 安徽
+title = anhui
+host = 112.26.0.1
+
+++ hubei_yd
+menu = 湖北
+title = hubei
+host = 111.47.92.1
+
+++ hunan_yd
+menu = 湖南
+title = hunan
+host = 111.8.0.1
+
+++ jiangxi_yd
+menu = 江西
+title = jiangxi
+host = 117.163.96.1
+
+++ guangdong_yd
+menu = 广东
+title = guangdong
+host = 120.196.10.1
+
+++ guangxi_yd
+menu = 广西
+title = guangxi
+host = 111.12.80.1
+
+++ hainan_yd
+menu = 海南
+title = hainan
+host = 111.28.0.1
+
+++ fujian_yd
+menu = 福建
+title = fujian
+host = 218.66.59.254
+
+++ sichuan_yd
+menu = 四川
+title = sichuan
+host =  218.205.231.1
+
+++ chongqing_yd
+menu = 重庆
+title = chongqing
+host = 218.207.20.1
+
+++ guizhou_yd
+menu = 贵州
+title = guizhou
+host = 211.139.1.3
+
+++ yunnan_yd
+menu = 云南
+title = yunnan
+host = 183.224.40.1
+
+++ xizang_yd
+menu = 西藏
+title = xizang
+host = 223.104.26.1
+
+++ shanx_yd
+menu = 陕西
+title = shanx
+host = 218.200.48.1
+
+++ gansu_yd
+menu = 甘肃
+title = gansu
+host = 218.203.160.1
+
+++ xinjiang_yd
+menu = 新疆
+title = xinjiang
+host = 218.202.152.130
+
+++ qinghai_yd
+menu = 青海
+title = qinghai
+host = 211.138.75.123
+
+++ ningxia_yd
+menu = 宁夏
+title = ningxia
+host = 218.203.106.1
+
+++ beijing_yd
+menu = 北京
+title = beijing
+host = 36.192.0.1
+
+++ tianjin_yd
+menu = 天津
+title = tianjin
+host = 211.137.160.5
+
+++ hebei_yd
+menu = 河北
+title = hebei
+host = 211.143.62.1
+
+++ shanxi_yd
+menu = 山西
+title = shanxi
+host = 221.131.55.1
+
+++ neimenggu_yd
+menu = 内蒙古
+title = neimenggu
+host =  218.202.71.1
+
+++ liaoning_yd
+menu = 辽宁
+title = liaoning
+host = 211.137.32.178
+
+++ jilin_yd
+menu = 吉林
+title = jilin
+host = 211.141.16.99
+
+++ heilongjiang_yd
+menu = 黑龙江
+title = heilongjiang
+host = 111.40.0.1
+
+++ shandong_yd
+menu = 山东
+title = shandong
+host = 218.201.96.130
+
+++ henan_yd
+menu = 河南
+title = henan
+host = 221.176.96.1
+
+#+ MultiHostCMCC
+#menu = 移动汇总
+#title = All Host In One Graph of CMCC
+#host = /CMCC/shanghai /CMCC/jiangsu /CMCC/zhejiang /CMCC/anhui /CMCC/hubei /CMCC/hunan /CMCC/jiangxi /CMCC/guangdong /CMCC/guangxi /CMCC/hainan /CMCC/fujian /CMCC/sichuan /CMCC/chongqing /CMCC/guizhou /CMCC/yunnan /CMCC/xizang /CMCC/shanxi_ /CMCC/gansu /CMCC/xinjiang /CMCC/qinghai /CMCC/ningxia /CMCC/beijing /CMCC/tianjin /CMCC/hebei /CMCC/shanxi /CMCC/neimenggu /CMCC/liaoning /CMCC/jilin /CMCC/heilongjiang /CMCC/shandong /CMCC/henan
+

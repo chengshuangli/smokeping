@@ -1,0 +1,331 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title =  NetworkTest
+remark = Welcome to the SmokePing website
+
++ IDC
+menu = IDC
+title = IDC
+++ Malaysia1
+menu = Malaysia 
+title = Malaysia 103.106.251.37
+host = 103.106.251.37
+
+
+++ russia1
+menu = russia 
+title = russia1 178.22.90.43
+host = 178.22.90.43
+
+
+++ vietnam1
+menu = vietnam
+title = vietnam1 103.48.192.76
+host = 103.48.192.76
+
+
+++ Indonesia1
+menu = Indonesia
+title = Indonesia1 35.198.204.189
+host = 35.198.204.189
+
+
+++ tw1
+menu = TaiWan
+title = TaiWan 112.121.94.94
+host = 112.121.94.94
+
+
+++ korea
+menu = korea
+title = korea1 220.95.235.146
+host = 220.95.235.146
+
+
+++ jp1
+menu = Japan
+title = Japan 158.205.79.254
+host = 158.205.79.254
+
+
+++ us1
+menu = us
+title = us 52.4.148.176
+host = 52.4.148.176
+
+
+++ Singapore1
+menu = Singapore
+title = Singapore1 203.118.6.101
+host = 203.118.6.101
+
++ AWS
+menu = AWS
+title = AWS
+
+++ us-east-11
+menu = us-east-1
+title = us-east-11 52.119.228.200
+host = 52.119.228.200
+
+
+++ us-east-21
+menu = us-east-2
+title = us-east-21 52.94.4.68
+host = 52.94.4.68
+
+
+++ us-west-11
+menu = us-west-1
+title = us-west-11 52.94.12.0
+host = 52.94.12.0
+
+
+++ us-west-21
+menu = us-west-2
+title = us-west-21 52.94.29.176
+host = 52.94.29.176
+
+
+++ ca-central-11
+menu = ca-central-1
+title = ca-central-11 52.94.14.38
+host = 52.94.14.38
+
+
+++ eu-west-11
+menu = eu-west-1
+title = eu-west-11 52.94.5.8
+host = 52.94.5.8
+
+
+++ eu-west-21
+menu = eu-west-2
+title = eu-west-21 52.94.15.84
+host = 52.94.15.84
+
+
+++ eu-central-11
+menu = eu-central-1
+title = eu-central-11 52.94.17.14
+host = 52.94.17.14
+
+
+++ ap-south-11
+menu = ap-south-1
+title = ap-south-11 52.94.20.66
+host = 52.94.20.66
+
+
+++ ap-northeast-21
+menu = ap-northeast-2
+title = ap-northeast-21 52.94.6.16
+host = 52.94.6.16
+
+
+++ ap-southeast-11
+menu = ap-southeast-1
+title = ap-southeast-11 52.94.11.72
+host = 52.94.11.72
+
+
+++ ap-southeast-21
+menu = ap-southeast-2
+title = ap-southeast-21 52.94.13.74
+host = 52.94.13.74
+
+
+++ ap-northeast-11
+menu = ap-northeast-1
+title = ap-northeast-11 52.94.8.88
+host = 52.94.8.88
+
+
+++ sa-east-11
+menu = sa-east-1
+title = sa-east-11 52.94.7.76
+host = 52.94.7.76
+
+
+++ cn-north-11
+menu = cn-north-1
+title = cn-north-11 54.222.57.202
+host = 54.222.57.202
+
+
+++ us-gov-west-11
+menu = us-gov-west-1
+title = us-gov-west-11 52.94.9.78
+host = 52.94.9.78
+
++ ALIYUN
+menu = ALIYUN
+title = ALIYUN
+
+
+++ us-east-vpc
+menu = us-east-vpc
+title = us-est-vpc 10.147.253.165
+host = 10.147.253.165
+
+
+++ us-west-vpc
+menu = us-west-vpc
+title = us-west-vpc 10.147.251.221
+host = 10.147.251.221
+
+++ Singapore-vpc
+menu = Singapore-vpc
+title = Singapore-vpc 10.147.1.248
+host = 10.147.1.248
+
+++ bj-vpc
+menu = bj-vpc
+title = bj-vpc 10.147.128.85
+host = 10.147.128.85
+
+++ us-east-47-90-206-133
+menu = us-east
+title = us-east 47.90.206.133
+host = 47.90.206.133
+
+
+++ us-west
+menu = us-west
+title = us-west 47.254.84.121
+host = 47.254.84.121
+
+++ Singapore-47-74-254-11
+menu = Singapore
+title = Singapore-47.74.254.11
+host = 47.74.254.11
+
+
+++ bj-39-106-56-212
+menu = BeiJing
+title = BeiJing 39.106.56.212
+host = 39.106.56.212
+
+
++ QQ
+menu =  QQ
+title = QQ
+
+
+++ qq-bj-62-234-223-79
+menu = BeiJing
+title = BeiJing 62.234.223.79
+host = 62.234.223.79
+
+++ qq-xjp-150-109-10-96
+menu = Singapore
+title = Singapore 150.109.10.96
+host = 150.109.10.96
+
+
+++ qq-us-east-170-106-6-97
+menu = us-east
+title = us-east 170.106.6.97
+host = 170.106.6.97
+
+
+++ qq-us-west-49-51-75-142
+menu = us-west
+title = us-west 49.51.75.142
+host = 49.51.75.142
+
+++ qq-bj-vpc
+menu = bj-vpc
+title = bj-vpc 10.148.0.4
+host = 10.148.0.4
+
+
+++ qq-xjp-vpc-10-148-0-4
+menu = Singapore-vpc
+title = Singapore 10.148.4.3
+host = 10.148.4.3
+
+
+++ qq-us-east-vpc-10-148-2-14
+menu = us-east-vpc
+title = us-east-vpc 10.148.2.14
+host = 10.148.2.14
+
+++ qq-us-west-vpc-10-148-6-15
+menu = us-west-vpc
+title = us-west-vpc 10.148.6.15
+host = 10.148.6.15
+
++ MY-AWS
+menu = MY-AWS
+title = MY-AWS
+
+++ us-east
+menu = us-east
+title = us-east 18.235.72.126
+host =  18.235.72.126
+
+++ us-west
+menu = us-west
+title = us-west 52.39.18.43
+host =  52.39.18.43
+
+++ Singapore
+menu = Singapore
+title = Singapore 18.136.160.126
+host =  18.136.160.126
+
+
+++ us-east-vpc
+menu = us-east-vpc
+title = us-east-vpc 10.151.0.44
+host =  10.151.0.44
+
+++ us-west-vpc
+menu = us-west-vpc
+title = us-west-vpc 10.151.2.97
+host =  10.151.2.97
+
+++ Singapore-vpc
+menu = Singapore-vpc
+title = Singapore-vpc 10.151.4.55
+host =  10.151.4.55
+
++ Google
+menu = Google
+title = Google
+
+++ us-east
+menu = us-east
+title = us-east 35.227.118.191
+host =  35.227.118.191
+
+
+++ us-west
+menu = us-west
+title = us-west 35.197.60.32
+host =  35.197.60.32
+
+++ Singapore
+menu = Singapore
+title = Singapore 35.240.228.74
+host =  35.240.228.74
+
+
+++ us-east-vpc
+menu = us-east-vpc
+title = us-east-vpc 10.136.0.2
+host =  10.136.0.2
+
+++ us-west-vpc
+menu = us-west-vpc
+title = us-west-vpc 10.136.2.2
+host =  10.136.2.2
+
+++ Singapore-vpc
+menu = Singapore-vpc
+title = Singapore-vpc 10.136.4.2
+host =  10.136.4.2
